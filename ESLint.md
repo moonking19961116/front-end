@@ -120,16 +120,24 @@ var person = {
 验证标签周围的空格
 <br>
 <br>
-(19) ***react/jsx-uses-react: Prevent React to be incorrectly marked as unused***
+(19) react/jsx-uses-react: Prevent React to be incorrectly marked as unused
 <br>
-***防止React被错误的标记为未使用***
+**防止React被错误的标记为未使用**
 <br>
 <br>
 (20) react/react-in-jsx-scope: Prevent missing React when using JSX 
 <br>
 防止在使用JSX的时候丢失react
 <br>
-reason: When using JSX, <a/> expands to ```javascript React.createElement("a")```. Therefore the React variable must be in scope.
+reason: When using JSX, 
+```javascript
+<a/>
+``` 
+expands to
+```javascript
+ React.createElement("a")
+```
+Therefore the React variable must be in scope.
 <br>
 <br>
 (21) arrow-parens: Require parens in arrow function arguments
@@ -140,14 +148,14 @@ reason: When using JSX, <a/> expands to ```javascript React.createElement("a")``
 <br>
 不符合：
 <br>
-```java
-a => {}
+```javascript
+a => {};
 ```
 <br>
 符合：
 <br>
-```java
-(a) => {}
+```javascript
+(a) => {};
 ```
 
 
