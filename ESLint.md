@@ -24,77 +24,130 @@ var person = {
 
 
 ### 4. 具体的规则（常用型）
-(1) react/boolean-prop-naming: Enforces consistent naming for boolean props 
+(1) react/boolean-prop-naming: Enforces consistent naming for boolean props
+<br>
 布尔属性的命名一致性 需要以is或has为前缀
 <br>
+<br>
 (2) react/display-name: Prevent missing displayName in a React component definition 
+<br>
 组件定义时需要定义组件名称
 <br>
+<br>
 (3) react/no-danger: Prevent usage of dangerous JSX properties 
+<br>
 禁止使用危险的JSX属性
 <br>
-(4) react/no-deprecated: Prevent usage of deprecated methods, including component lifecyle methods 
+<br>
+(4) react/no-deprecated: Prevent usage of deprecated methods, including component lifecyle methods
+<br>
 禁止使用过时的方法，包括组件生命周期方法
 <br>
+<br>
 (5) react/no-did-mount-set-state: Prevent usage of setState in componentDidMount 
+<br>
 禁止在 componentDidMount方法中使用setState
 <br>
+<br>
 (6) react/no-did-update-set-state: Prevent usage of setState in componentDidUpdate 
+<br>
 禁止在componentDidUpdate使用setState
 <br>
+<br>
 (7) react/no-typos: Prevent common casing typos
+<br>
 确保没有声明静态类属性和生命周期方法的大小写错误
 <br>
+<br>
 (8) react/no-unescaped-entities: Prevent invalid characters from appearing in markup 
+<br>
 防止标签中出现无效字符
 <br>
+<br>
 (9) react/no-unknown-property: Prevent usage of unknown DOM property (fixable) 
+<br>
 禁止使用未知的DOM属性
 <br>
+<br>
 (10) react/react-in-jsx-scope: Prevent missing React when using JSX 
+<br>
 防止在使用JSX时丢失React
 <br>
+<br>
 (11) react/self-closing-comp: Prevent extra closing tags for components without children
+<br>
 防止没有孩子的组件有额外的闭标签
 <br>
+<br>
 (12) react/jsx-closing-bracket-location: Validate closing bracket location in JSX
+<br>
 验证JSX中闭括号的位置
 <br>
+<br>
 (13) react/jsx-closing-tag-location: Validate closing tag location in JSX
+<br>
 验证JSX中闭标签的位置
 <br>
+<br>
 (14) react/jsx-curly-spacing: Enforce or disallow spaces inside of curly braces in JSX attributes and expressions
+<br>
 花括弧内两边是否留空格
 <br>
+<br>
 (15) react/jsx-equals-spacing: Enforce or disallow spaces around equal signs in JSX attributes
+<br>
 等号两边是否留空格
 <br>
+<br>
 (16) react/jsx-indent-props: Validate props indentation in JSX 
+<br>
 验证属性缩进
+<br>
 例如
+<br>
 ```javascript
 "react/jsx-indent-props": [2, 4]
 ```
 <br>
+<br>
 (17) react/jsx-space-before-closing: Validate spacing before closing bracket in JSX
+<br>
 验证闭标签前面的空格
 <br>
+<br>
 (18) react/jsx-tag-spacing: Validate whitespace in and around the JSX opening and closing brackets
+<br>
 验证标签周围的空格
 <br>
+<br>
 (19) ***react/jsx-uses-react: Prevent React to be incorrectly marked as unused***
+<br>
 ***防止React被错误的标记为未使用***
 <br>
+<br>
 (20) react/react-in-jsx-scope: Prevent missing React when using JSX 
+<br>
 防止在使用JSX的时候丢失react
-reason: When using JSX, ```<a/>``` expands to ```React.createElement("a")```. Therefore the React variable must be in scope.
+<br>
+reason: When using JSX, <a/> expands to ```javascript React.createElement("a")```. Therefore the React variable must be in scope.
+<br>
 <br>
 (21) arrow-parens: Require parens in arrow function arguments
+<br>
 箭头函数变量需要括号
+<br>
 例如
-```javascript
-a => {}    //bad
-(a) => {}  //good
+<br>
+不符合：
+<br>
+```java
+a => {}
+```
+<br>
+符合：
+<br>
+```java
+(a) => {}
 ```
 
 
