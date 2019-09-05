@@ -85,7 +85,7 @@ export class Child extends Component{
         return(
         	<div onClick={this.handleClick.bind(this, 'anotherName')}>
             	<p>{this.state.fatherName}</p>
-            </>
+            </div>
         )
     }
 }
